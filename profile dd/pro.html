@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akshen S — Professional Profile</title>
+  <meta name="description" content="Professional profile page for resume / portfolio." />
+  <style>
+    :root{ --accent:#2563eb; --bg:#0f172a; --card:#0b1220; --muted:#9ca3af; --glass: rgba(255,255,255,0.03); }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071028 0%, #061626 100%); color:#e6eef8}
+    .container{max-width:980px;margin:32px auto;padding:24px}
+    .card{background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px;padding:22px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    .grid{display:grid;grid-template-columns:280px 1fr;gap:20px}
+    .profile-photo{width:240px;height:240px;border-radius:12px;background:linear-gradient(180deg,#0b1220,#081226);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(255,255,255,0.03)}
+    .profile-photo img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:28px;margin:0}
+    h2{font-size:16px;margin:6px 0;color:var(--muted)}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);}
+    .section{margin-top:18px}
+    p.lead{color:#dbeafe;margin:10px 0 0}
+    .contact-list{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+    .contact-item{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted)}
+    .contact-item a{color:inherit;text-decoration:none}
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    .skill{font-size:13px}
+    .bar{height:8px;border-radius:999px;background:rgba(255,255,255,0.06);overflow:hidden;margin-top:6px}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#60a5fa)}
+    .content h3{margin:0 0 8px}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .item{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .item small{display:block;color:var(--muted);margin-top:6px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{padding:12px;background:rgba(255,255,255,0.02);border-radius:10px}
+    .actions{display:flex;gap:10px;margin-top:16px}
+    .btn{padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+    @media (max-width:760px){
+      .grid{grid-template-columns:1fr;}
+      .profile-photo{width:160px;height:160px;margin:0 auto}
+      .container{padding:16px}
+    }
+    @media print{
+      body{background:white;color:black}
+      .container{max-width:700px}
+      .card{box-shadow:none;border-radius:0;padding:6px}
+      .btn, .actions{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="grid">
+        <aside>
+          <div class="profile-photo">
+            <!-- Replace src with your photo file name (e.g., photo.jpg) -->
+            <img src="WhatsApp Image 2025-06-26 at 21.14.39_01427b55.jpg" alt="Your Photo">
+          </div>
+
+          <div class="section contact-list">
+            <div class="contact-item"><strong>Akshen.S</strong></div>
+            <div class="contact-item">Role: <span style="margin-left:6px">AI & Machine Learning Intern </span></div>
+            <div class="contact-item">📍 Kanniya kumari, Tamil Nadu</div>
+            <div class="contact-item">✉️ <a href="mailto:you@example.com">akshannelsan@gmail.com</a></div>
+            <div class="contact-item">🔗 <a href="#">your-website.com</a></div>
+            <div class="contact-item">📱 <a href="tel:+911234567890">+91 8531899895</a></div>
+          </div>
+
+          <div class="section">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill">Python (NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, Keras)
+                <div class="bar"><i style="width:92%"></i></div>
+              </div>
+              <div class="skill">Machine Learning & Deep Learning 
+                <div class="bar"><i style="width:90%"></i></div>
+              </div>
+              <div class="skill">Power BI (Dashboards, Retail Expansion Strategy Project)
+                <div class="bar"><i style="width:75%"></i></div>
+              </div>
+              <div class="skill">HTML, CSS, JavaScript (frontend basics)
+                <div class="bar"><i style="width:79%"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Languages</h3>
+            <div class="pill">English</div>
+            <div class="pill">Tamil</div>
+          </div>
+        </aside>
+
+        <main class="content">
+          <header>
+            <h1>Akshen S</h1>
+            <h2>AI & Machine Learning Intern</h2>
+            <div class="meta">
+              <div class="pill">Open to work</div>
+              <div class="pill">Available: Immediate</div>
+              <div class="pill">Location: Chennai,Kerala India</div>
+            </div>
+            <p class="lead">“Aspiring Machine Learning Engineer with hands-on experience in image classification, plant disease detection, and business analytics projects. Skilled in Python, deep learning, and data visualization tools like Power BI. Passionate about building AI-driven solutions and seeking opportunities to apply my skills in real-world applications.”</p>
+
+            <div class="actions">
+              <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+            </div>
+          </header>
+
+          <section class="section">
+            <h3>Experience</h3>
+            <div class="timeline">
+              <div class="item">
+                <strong>AI & ML * Internship — Srishti Innovative</strong>
+                <small>Aug 2024 — Sep 2024 · Kerala, India</small>
+                <div>Collaborated with the AI/ML team to develop and optimize machine learning models for real-world applications.
+Gained hands-on experience in data preprocessing, feature engineering, and model evaluation using Python libraries like Pandas,
+Scikit-learn, TensorFlow, and Keras.
+Worked on classification and prediction problems, including exploratory data analysis and model fine-tuning.
+Participated in daily stand-ups and weekly project reviews to track progress and integrate feedback from senior developers.
+Contributed to research and implementation of algorithms in projects related to image recognition and text analysis.
+Improved understanding of model performance metrics (accuracy, precision, recall, F1-score) and their relevance in business
+contexts.</div>
+              </div>
+
+              
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Projects</h3>
+            <div class="projects">
+              <div class="project">
+                <strong>Project One</strong>
+                <small>GitHub · Jan 2024</small>
+                <div>Built a Convolutional Neural Network (CNN) model to classify
+images of dogs and cats. </div>
+              </div>
+
+              <div class="project">
+                <strong>Project Two</strong>
+                <small>Personal · 2025</small>
+                <div>Plant Disease Detection using Deep Learning</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Education</h3>
+            <div class="timeline">
+              <div class="item">
+                <strong>B.Tech in Airtificial Intiligents & Data science — Anna University</strong>
+                <small>2022 — 2026</small>
+                <div>Relevant coursework or highlights.</div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" class="section">
+            <h3>Contact</h3>
+            <p class="lead">Email: akshannelsan@gmail.com
+ | Phone: +91-851899895 | Location: Tamil Nadu, India</p>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
